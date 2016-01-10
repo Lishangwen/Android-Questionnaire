@@ -1,5 +1,7 @@
 package com.example.lsw.exam1;
-
+/**
+ *  耳鸣致残评估表答题界面
+ */
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
