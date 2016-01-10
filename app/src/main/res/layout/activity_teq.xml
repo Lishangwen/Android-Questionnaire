@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!--耳鸣评价量表（TEQ）问题答题界面布局文件-->
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -8,7 +9,7 @@
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:orientation="vertical"
-    tools:context="com.example.lsw.exam1.ExamActivity">
+    tools:context=".TeqActivity">
     <ScrollView
         android:layout_weight="1"
         android:layout_width="match_parent"
@@ -25,7 +26,7 @@
                 android:textStyle="bold"
                 android:textSize="10pt"
                 android:textColor="#000"
-                android:id="@+id/question"
+                android:id="@+id/question_teq"
                 android:layout_width="match_parent"
                 android:layout_height="130dp" />
             
@@ -53,7 +54,7 @@
 
                 android:paddingLeft="10dp"
                 android:layout_marginTop="20dp"
-                android:id="@+id/radioGroup"
+                android:id="@+id/radioGroup_teq"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
@@ -62,7 +63,7 @@
                     android:text="无耳鸣"
                     android:paddingLeft="10dp"
                     android:textSize="8pt"
-                    android:id="@+id/answerA"
+                    android:id="@+id/answerA_teq"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
@@ -71,7 +72,7 @@
                     android:paddingLeft="10dp"
                     android:text="安静环境（如：睡觉前）"
                     android:textSize="8pt"
-                    android:id="@+id/answerB"
+                    android:id="@+id/answerB_teq"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
@@ -80,7 +81,7 @@
                     android:paddingLeft="10dp"
                     android:text="一般环境（如：诊室里）"
                     android:textSize="8pt"
-                    android:id="@+id/answerC"
+                    android:id="@+id/answerC_teq"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
 
@@ -89,7 +90,7 @@
                     android:paddingLeft="10dp"
                     android:text="任何环境（如：马路上）"
                     android:textSize="8pt"
-                    android:id="@+id/answerD"
+                    android:id="@+id/answerD_teq"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content" />
             </RadioGroup
@@ -105,14 +106,14 @@
 
         <Button
             android:text="上一题"
-            android:id="@+id/previous"
+            android:id="@+id/previous_teq"
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />
 
         <Button
             android:text="下一题"
-            android:id="@+id/next"
+            android:id="@+id/next_teq"
             android:layout_weight="1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content" />

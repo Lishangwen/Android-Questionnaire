@@ -1,5 +1,4 @@
 package com.example.lsw.exam1;
-
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -8,34 +7,37 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.TextView;
-
 import java.util.List;
 
-public class ExamActivity extends AppCompatActivity {
+/**
+ * 用于回答耳鸣评价量表（TEQ）问题的程序界面
+ *
+ */
+public class TeqActivity extends AppCompatActivity {
     private int count;
     private int current;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_exam);
+        setContentView(R.layout.activity_teq);
 
         DBService dbService=new DBService();
-        final List<Question> list=dbService.getQuestions();
+        final List<Question> list=dbService.GetTeqQuestions();
         count=list.size();
         current=0;
 
-        final TextView tv_question=(TextView)findViewById(R.id.question);
+        final TextView tv_question=(TextView)findViewById(R.id.question_teq);
         final RadioButton[] radioButtons=new RadioButton[4];
         final EditText edit_answer=(EditText)findViewById(R.id.edit_answer);
-        radioButtons[0]=(RadioButton)findViewById(R.id.answerA);
-        radioButtons[1]=(RadioButton)findViewById(R.id.answerB);
-        radioButtons[2]=(RadioButton)findViewById(R.id.answerC);
-        radioButtons[3]=(RadioButton)findViewById(R.id.answerD);
+        radioButtons[0]=(RadioButton)findViewById(R.id.answerA_teq);
+        radioButtons[1]=(RadioButton)findViewById(R.id.answerB_teq);
+        radioButtons[2]=(RadioButton)findViewById(R.id.answerC_teq);
+        radioButtons[3]=(RadioButton)findViewById(R.id.answerD_teq);
 
-        Button btn_next=(Button)findViewById(R.id.next);
-        Button btn_previous=(Button)findViewById(R.id.previous);
+        Button btn_next=(Button)findViewById(R.id.next_teq);
+        Button btn_previous=(Button)findViewById(R.id.previous_teq);
 
-        final RadioGroup radioGroup=(RadioGroup)findViewById(R.id.radioGroup);
+        final RadioGroup radioGroup=(RadioGroup)findViewById(R.id.radioGroup_teq);
 
         Question q=list.get(0);
         tv_question.setText(q.question);

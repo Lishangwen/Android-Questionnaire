@@ -15,8 +15,11 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".ExamActivity"
-            android:label="耳鸣评价量表"></activity>
+        <activity
+            android:name=".TeqActivity"
+            android:label="耳鸣评价量表" />
+        <activity android:name=".DaActivity"
+            android:label="耳鸣致残评估"></activity>
     </application>
 
 </manifest>

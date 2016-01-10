@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="com.example.lsw.exam1.DaActivity">
+
+    <ScrollView
+        android:layout_weight="1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="false">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:text="1.你在什么环境下可听到耳鸣"
+                android:typeface="serif"
+                android:textStyle="bold"
+                android:textSize="10pt"
+                android:textColor="#000"
+                android:id="@+id/question_da"
+                android:layout_width="match_parent"
+                android:layout_height="130dp" />
+
+            <RadioGroup
+
+                android:paddingLeft="10dp"
+                android:layout_marginTop="80dp"
+                android:id="@+id/radioGroup_da"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <RadioButton
+                    android:layout_marginTop="10dp"
+                    android:text="无耳鸣"
+                    android:paddingLeft="10dp"
+                    android:textSize="8pt"
+                    android:id="@+id/answerA_da"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:layout_marginTop="15dp"
+                    android:paddingLeft="10dp"
+                    android:text="安静环境（如：睡觉前）"
+                    android:textSize="8pt"
+                    android:id="@+id/answerB_da"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:layout_marginTop="15dp"
+                    android:paddingLeft="10dp"
+                    android:text="一般环境（如：诊室里）"
+                    android:textSize="8pt"
+                    android:id="@+id/answerC_da"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+                <RadioButton
+                    android:layout_marginTop="15dp"
+                    android:paddingLeft="10dp"
+                    android:text="任何环境（如：马路上）"
+                    android:textSize="8pt"
+                    android:id="@+id/answerD_da"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+            </RadioGroup
+                >
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_weight="7"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:text="上一题"
+            android:id="@+id/previous_da"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="下一题"
+            android:id="@+id/next_da"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+</LinearLayout>

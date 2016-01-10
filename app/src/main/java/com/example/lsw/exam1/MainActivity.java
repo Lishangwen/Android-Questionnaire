@@ -50,14 +50,23 @@ public class MainActivity extends AppCompatActivity {
         }
 
 
-        Button btn=(Button)findViewById(R.id.button);
-        btn.setOnClickListener(new View.OnClickListener()
+        Button btn_teq=(Button)findViewById(R.id.button_teq);
+        Button btn_da=(Button)findViewById(R.id.button_da);
+        btn_teq.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
             {
-                Intent intent=new Intent(MainActivity.this,ExamActivity.class);
-                startActivity(intent);
+                Intent intent_teq=new Intent(MainActivity.this,TeqActivity.class);
+                startActivity(intent_teq);
+            }
+        });
+
+        btn_da.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent_da=new Intent(MainActivity.this,DaActivity.class);
+                startActivity(intent_da);
             }
         });
     }
